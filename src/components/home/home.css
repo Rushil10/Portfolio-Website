@@ -3,5 +3,9 @@
     flex:1;
     background-image: url('../../images/bg4.jpg');
     flex-direction: column;
-    justify-content: center
-  }
+    justify-content: center;
+    margin-left: 55px;
+    background-color:black;
+    height:100%;
+}
+
