@@ -1,0 +1,11 @@
+.toolbar {
+    height:100%;
+    width: 4.05%;
+    display:flex;
+    background-color: #101010;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    /*position:fixed;
+    */
+}

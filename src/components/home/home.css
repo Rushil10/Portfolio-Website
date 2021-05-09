@@ -1,0 +1,7 @@
+.rest {
+    display:flex;
+    flex:1;
+    background-image: url('../../images/bg4.jpg');
+    flex-direction: column;
+    justify-content: center
+  }
