@@ -23,9 +23,9 @@ function Home() {
                 />
                 </div>
             </div>
-            <div>
+            <a href="/contact">
                 <button style={{height:35,backgroundColor:'transparent',borderWidth:1,borderColor:'#fc6d6d',paddingLeft:9,paddingRight:9,color:'#fc6d6d',marginLeft:45}}>Contact Me</button>
-            </div>
+            </a>
         </div>
     )
 }

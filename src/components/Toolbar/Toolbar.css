@@ -2,9 +2,10 @@
     height:100%;
     width: 55px;
     display:flex;
-    background-color: #101010;
     align-items: center;
     justify-content:center;
     text-align: center;
     position:fixed;
+    background: rgb(0,2,3);
+    background: linear-gradient(0deg, rgba(0,2,3,0.98) 0%, rgba(56,52,52,1) 100%);
 }
