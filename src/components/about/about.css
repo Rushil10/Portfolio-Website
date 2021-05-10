@@ -1,0 +1,19 @@
+.icon {
+    display: inline-flex;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 19px;
+}
+
+.first {
+    padding-top: 15px;
+    text-align: start;
+    margin-left: 15px;
+}
+
+.icon-text {
+    margin-left: 9px;
+    text-align: start;
+    vertical-align: middle;
+    line-height:35px
+}
