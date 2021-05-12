@@ -4,13 +4,16 @@ import './GitCard.css';
 function GitCard(props) {
     return (
         <a href={props.data.link} className="linkkk">
+            <div className="dummy">
+
+            </div>
             <div class="box">
             <div className="first-row">
                 {props.data.title}
                 <div className="max-d">
 
                 </div>
-                <div>
+                <div className="date">
                     {props.data.date}
                 </div>
             </div>

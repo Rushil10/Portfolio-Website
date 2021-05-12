@@ -1,16 +1,26 @@
 .box{
  padding: 15px;
- margin-right: 9px;
- margin-left: 9px;
- margin-top: 15px;
  border: solid #2a2a2a;
  border-width: 1px;
  height:fit-content;
 }
 
+.dummy {
+    position:absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background:#0d1117;
+    opacity: 0;
+}
+
 .linkkk {
     text-decoration: none;
-    color:'#0d1117'
+    color:'#0d1117';
+    position:relative;
+    margin-right: 9px;
+    margin-left: 9px;
+    margin-top: 15px;
 }
 
 .language {
@@ -22,8 +32,9 @@
     margin-right: 15px;
 }
 
-.box:hover {
-    opacity: 0.75;
+.dummy:hover {
+    opacity:0.09;
+    background:white
 }
 
 .javascript {
@@ -32,6 +43,7 @@
     color: #fff300;
     border-radius:9999px;
     font-weight: 150;
+    width:fit-content;
 }
 
 .react {
@@ -40,6 +52,7 @@
     color: #61dbfb;
     border-radius:9999px;
     font-weight: 150;
+    width:fit-content;
 }
 
 .express {
@@ -48,6 +61,7 @@
     color: #00bfff;
     border-radius:9999px;
     font-weight: 150;
+    width:fit-content;
 }
 
 .mysql {
@@ -56,6 +70,7 @@
     color: #00ff7f;
     border-radius:9999px;
     font-weight: 150;
+    width:fit-content;
 }
 
 .tkinter {
@@ -64,6 +79,7 @@
     color: #ff00ff;
     border-radius:9999px;
     font-weight: 150;
+    width:fit-content;
 }
 
 .opencv {
@@ -72,6 +88,7 @@
     color: #ff8c00;
     border-radius:9999px;
     font-weight: 150;
+    width:fit-content;
 }
 
 .redux {
@@ -80,6 +97,7 @@
     color: #ff69b4;
     border-radius:9999px;
     font-weight: 150;
+    width:fit-content;
 }
 
 .firebase {
@@ -88,6 +106,7 @@
     color: #ffd700;
     border-radius:9999px;
     font-weight: 150;
+    width:fit-content;
 }
 
 .react-native {
@@ -96,6 +115,7 @@
     color: #20b2aa;
     border-radius:9999px;
     font-weight: 150;
+    width:fit-content;
 }
 
 .tensorflow {
@@ -104,6 +124,7 @@
     color: #ff4500;
     border-radius:9999px;
     font-weight: 150;
+    width:fit-content;
 }
 
 .max-d {
@@ -132,4 +153,33 @@
     flex-direction:row;
     flex:1;
     margin-top: 15px;
+    word-wrap: break-word;
 }
+
+.date {
+    color:#dcdcdc
+}
+
+@media only screen and (max-width: 489px) {
+    .languages {
+        width: 100%;
+        display:inline-block;
+    }
+    .language {
+        display: inline-block;
+        margin-top: 9px;
+    }
+    .first-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date {
+        margin-top: 5px;
+        font-size:15.5px;
+    }
+
+    .second-row {
+        padding-left: 0px;
+    }
+  }
