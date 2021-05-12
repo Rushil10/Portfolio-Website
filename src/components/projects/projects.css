@@ -1,0 +1,12 @@
+.main2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 55px;
+    background-color: #0d1117;
+    overflow-y: auto;
+}
+
+.github {
+    width: 100%;
+}
