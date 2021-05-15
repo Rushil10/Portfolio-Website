@@ -1,0 +1,89 @@
+.con_container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 55px;
+    background-color:#eef4ff;
+    overflow-y: auto;
+    padding-bottom: 55px;
+    overflow-x: hidden;
+}
+
+.con_box {
+    font-size:35px;
+    color:#fc6d6d;
+    padding:9px;
+    font-weight:550;
+}
+
+.con_label {
+    font-size:29px;
+    color:#fc6d6d;
+    padding:9px
+}
+
+.form_name {
+    display: flex;
+    flex-direction: row;
+}
+
+.name_span {
+    display:flex;
+    line-height:35px;
+    vertical-align:middle;
+    text-align:center;
+    padding-left:10.5px;
+    padding-right: 10.5px;
+    border-top:1px solid;
+    border-radius: 0px 6px 6px 0px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #cdd9ed;
+    background:#eef4ff;
+    color:gray;
+    font-size:15px;
+    font-weight:595
+}
+
+.input_name {
+    border-top:1px solid;
+    border-left:1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #cdd9ed;
+    background:#eef4ff;
+    font-size:19px;
+    padding: 0.5px;
+    width:45%;
+    margin-left:9px;
+    font-family: inherit;
+    line-height:31px;
+    padding-left:15px;
+    background:#fff;
+    border-radius: 6px 0px 0px 6px;
+    color:gray
+}
+
+.input_name:focus + .name_span{
+    border:1px solid;
+    outline:none;
+    border-color: #275efe;
+    border-radius: 0px 6px 6px 0px;
+    background:#678efe;
+    color:#101010;
+}
+
+.input_name:focus {
+    border:1px solid;
+    outline:none;
+    border-color: #275efe;
+    border-radius: 6px 0px 0px 6px;
+    background:#fff
+}
+
+.contact-form {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+

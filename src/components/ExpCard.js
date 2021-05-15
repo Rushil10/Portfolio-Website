@@ -11,29 +11,33 @@ function ExpCard(props) {
     const logos = [mn,n]
 
     return(
-        <div className="container">
-            <div className="dummy">
+        <div className="exp_container">
+            {/*
+                
+                <div className="exp_dummy">
 
         </div>
-            <div className="box">
-                <div className="first-row">
-                    <div className="image">
+             */   
+            }
+            <div className="exp_box">
+                <div className="exp_first-row">
+                    <div className="exp_image">
                         <img src={logos[props.index]} style={{height:41,width:41}} />
                     </div>
-                    <div className="cname">
+                    <div className="exp_cname">
                         {props.item.name}
                     </div>
                 </div>
-                <div className="position">
+                <div className="exp_position">
                     {props.item.role}
                 </div>
-                <div className="term">
+                <div className="exp_term">
                     {props.item.term}
                 </div>
-                <div className="description">
+                <div className="exp_description">
                     {props.item.description}
                 </div>
-                <div className="links">
+                <div className="exp_links">
                     {
                         props.item.plink!=='' &&
                         <a href={props.item.plink}><img src={ps} style={{height:35,width:35,marginRight:5}} /></a>
