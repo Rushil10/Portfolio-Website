@@ -14,3 +14,16 @@
     color:#fc6d6d;
     padding:15px;
 }
+
+@media only screen and (max-width: 600px) {
+    .main5 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin-left: 0px;
+        background-color: #0d1117;
+        overflow-y: auto;
+        padding-bottom: 55px;
+        overflow-x: hidden;
+    }
+}

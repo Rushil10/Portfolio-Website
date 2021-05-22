@@ -6,11 +6,15 @@ import About from './components/about/about';
 import Projects from './components/projects/projects';
 import Contact from './components/contact/contact';
 import Experience from './components/experience/experience';
+import Navbar from './components/navbar/navbar';
 
 function App() {
   return (
     <div className="main">   
       <Router>
+        <div className="hide">
+        <Navbar />
+        </div>
         <Toolbar /> 
         <Switch>
           <Route exact path="/" component={Home}/>
