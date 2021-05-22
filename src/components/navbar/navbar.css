@@ -4,6 +4,19 @@
     justify-content: center;
 }
 
+.nav-row {
+    display:flex;
+    flex:1;
+    flex-direction: row;
+    padding: 1px
+}
+
+.nav-title {
+    display:flex;
+    flex:1;
+    color:white;
+}
+
 .navbarli {
     width: 100%;
     text-align: center;
@@ -15,14 +28,21 @@
 .not-a-link {
     text-decoration: none;
     color:white;
-    font-size:19px;
+    font-size:25px;
     margin-top:15px;
 }
 
 .a-link {
     text-decoration: none;
-    color:#1da1f2;
-    font-size:19px;
+    color:#dc6d6d;
+    font-size:35px;
+    margin-top:15px;
+}
+
+.a-linkb {
+    text-decoration: none;
+    color:#1da1f6;
+    font-size:35px;
     margin-top:15px;
 }
 

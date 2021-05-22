@@ -11,9 +11,11 @@ function Home() {
             <div style={{fontSize: 55,marginLeft: 45,color:'white',fontWeight:500}}>
                 I'm Rushil,
             </div>
-            <div style={{fontSize: 29,marginLeft: 45,color:'white',flexDirection:'row',width:79}}>
-                I'm a
-                <div style={{position:'relative',left:69,top:-38.4,color:'#fc6d6d'}}>
+            <div className="typing">
+                <div>
+                    I am a 
+                </div>
+                <div style={{color:'#fc6d6d',marginLeft:15}}>
                 <Typewriter
                     options={{
                     strings: ['Student', 'Developer'],
@@ -24,7 +26,7 @@ function Home() {
                 </div>
             </div>
             <a href="/contact">
-                <button style={{height:35,backgroundColor:'transparent',borderWidth:1,borderColor:'#fc6d6d',paddingLeft:9,paddingRight:9,color:'#fc6d6d',marginLeft:45}}>Contact Me</button>
+                <button style={{fontSize:19,paddingTop:9,paddingBottom:9,borderRadius:5.5,backgroundColor:'transparent',borderWidth:0.5,borderColor:'#fc6d6d',paddingLeft:9,paddingRight:9,color:'#fc6d6d',marginLeft:45}}>Contact Me</button>
             </a>
         </div>
     )

@@ -3,19 +3,24 @@ import './contact.scss';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import tick from '../../images/tick.svg';
+import { FaSpinner } from 'react-icons/fa';
+import {Spinner} from 'react-activity'
 init("user_YURxBHiKDaqPRsgjhUIvN");
 
 function Contact() {
 
     const [visible,setVisible] = React.useState(false);
+    const [loading,setLoading] = React.useState(false);
 
     function sendEmail(e) {
+        setLoading(true);
         e.preventDefault();
         console.log(e.target)
         emailjs.sendForm('service_tmyx21t','template_dirkou2', e.target, 'user_YURxBHiKDaqPRsgjhUIvN')
           .then((result) => {
               console.log(result.text);
               setVisible(true);
+              setLoading(false);
               setTimeout(function () {
                   setVisible(false)
               },5000)
@@ -51,7 +56,13 @@ function Contact() {
                     <textarea placeholder="message" className="input_message" name="message" />
                 </div>
                 <button type="submit" className="form_button">
-                    Send
+                    {
+                        !loading ?
+                        'Send':
+                        <div style={{paddingLeft:15.75,alignItems:'center',textAlign:'center',justifyContent:'center'}}>
+                            <Spinner style={{}}/>
+                        </div>
+                    }
                 </button>
             </form>
             {

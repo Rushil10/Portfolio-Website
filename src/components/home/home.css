@@ -9,11 +9,20 @@
     height:100%;
 }
 
+.typing {
+    display:flex;
+    flex-direction: row;
+    height:55px;
+    padding-left: 45px;
+    font-size:29px;
+    color:white
+}
+
 @media only screen and (max-width: 600px) {
     .rest {
         display:flex;
         flex:1;
-        background-image: url('../../images/bg4.jpg');
+        background-image: url('../../images/p1.jpg');
         flex-direction: column;
         justify-content: center;
         margin-left: 0px;
