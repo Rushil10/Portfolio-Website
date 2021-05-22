@@ -12,6 +12,12 @@
     flex-direction:column;
     height:100vh;
   }
+  .hide {
+    position:fixed;
+    width:100%;
+    overflow:visible;
+    z-index:10
+  }
 }
 
 @media only screen and (min-width: 600px) {

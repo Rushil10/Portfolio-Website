@@ -10,7 +10,7 @@
 }
 
 .title-exp {
-    font-size: 29px;
+    font-size: 39px;
     color:#fc6d6d;
     padding:15px;
 }
@@ -25,5 +25,11 @@
         overflow-y: auto;
         padding-bottom: 55px;
         overflow-x: hidden;
+        margin-top: 35px;
+    }
+    .title-exp {
+        font-size: 39px;
+        color:#1da1f2;
+        padding:15px;
     }
 }

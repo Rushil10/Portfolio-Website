@@ -19,6 +19,7 @@
         overflow-y: auto;
         padding-bottom: 55px;
         overflow-x: hidden;
+        margin-top: 35px;
     }
 }
 
@@ -71,6 +72,7 @@
 .form_button {
     margin-top: 15px;
     margin-left: 9px;
+    min-width: 55px;
     height: 35px;
     width: 7.5%;
     font-size: 15px;

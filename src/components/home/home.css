@@ -19,5 +19,6 @@
         margin-left: 0px;
         background-color:black;
         height:100%;
+        overflow:hidden
     }
 }
