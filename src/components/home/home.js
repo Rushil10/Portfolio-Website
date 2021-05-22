@@ -25,9 +25,6 @@ function Home() {
                 />
                 </div>
             </div>
-            <a href="/contact">
-                <button style={{fontSize:19,paddingTop:9,paddingBottom:9,borderRadius:5.5,backgroundColor:'transparent',borderWidth:0.5,borderColor:'#fc6d6d',paddingLeft:9,paddingRight:9,color:'#fc6d6d',marginLeft:45}}>Contact Me</button>
-            </a>
         </div>
     )
 }

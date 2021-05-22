@@ -1,7 +1,7 @@
 .rest {
     display:flex;
     flex:1;
-    background-image: url('../../images/bg4.jpg');
+    background-image: url('../../images/p45.jpg');
     flex-direction: column;
     justify-content: center;
     margin-left: 55px;
@@ -22,7 +22,8 @@
     .rest {
         display:flex;
         flex:1;
-        background-image: url('../../images/p1.jpg');
+        background-image: url('../../images/p2.jpg');
+        background-size: contain;
         flex-direction: column;
         justify-content: center;
         margin-left: 0px;
