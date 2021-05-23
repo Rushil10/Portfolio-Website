@@ -5,7 +5,8 @@ import ResponsiveMenu from 'react-responsive-navbar';
 import {FaBars} from 'react-icons/fa'
 import {FaTimes} from 'react-icons/fa'
 import { useLocation } from 'react-router-dom'
-
+import rush10 from '../../images/rush10.svg'
+import rush18 from '../../images/rush18.svg'
 
 function Navbar() {
     const location = useLocation();
@@ -13,6 +14,14 @@ function Navbar() {
         <ResponsiveMenu
         menuOpenButton={
             <div className="nav-row">
+                <div>
+                {
+                    (location.pathname==="/" || location.pathname==="/experience" || location.pathname==="/projects" ) ?
+                    <img src={rush10} style={{height:51}} />
+                    :
+                    <img src={rush18} style={{height:51}} />
+                }
+                </div>
                 <div className="nav-title">
                     
                 </div>
