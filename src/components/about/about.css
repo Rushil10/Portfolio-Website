@@ -1,79 +1,95 @@
 .icon {
-    display: inline-flex;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 19px;
+  display: inline-flex;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 19px;
 }
 
 .above {
-    display: flex;
-    flex: 1;
-    margin-left:55px;
-    flex-direction: column;
+  display: flex;
+  flex: 1;
+  margin-left: 55px;
+  flex-direction: column;
 }
 
 .first {
-    padding-top: 15px;
-    text-align: start;
-    margin-left: 15px;
+  padding-top: 15px;
+  text-align: start;
+  margin-left: 15px;
 }
 
 .icon-text {
-    margin-left: 9px;
-    text-align: start;
-    vertical-align: middle;
-    line-height:35px
+  margin-left: 9px;
+  text-align: start;
+  vertical-align: middle;
+  line-height: 35px;
 }
 
 .mainl {
-    display: flex;
-    flex:1;
-    text-align: center;
-    justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 25px;
-    flex-direction: column;
-    background: rgb(19,155,207);
-    background: linear-gradient(0deg, rgba(19,155,207,1) 0%, rgba(188,199,201,1) 100%);
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  flex-direction: column;
+  background: rgb(19, 155, 207);
+  background: linear-gradient(
+    0deg,
+    rgba(19, 155, 207, 1) 0%,
+    rgba(188, 199, 201, 1) 100%
+  );
 }
 
-
-
 .technical_skill_header {
-    font-size: 31px;
-    margin-left: 15px;
-    font-weight: 550;
-    margin-bottom: 15px;
+  font-size: 31px;
+  margin-left: 15px;
+  font-weight: 550;
+  margin-bottom: 15px;
+}
+
+.technical_style {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 16.5px;
+  padding-left: 15px;
 }
 
 .technical_icon {
-    display: inline-flex;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 16.5px;
-    padding-left:15px;
+  display: inline-flex;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 16.5px;
+  padding-left: 15px;
 }
 
 .technical_text {
-    margin-left: 9px;
-    text-align: start;
-    vertical-align: middle;
-    line-height:29px;
+  margin-left: 9px;
+  text-align: start;
+  vertical-align: middle;
+  line-height: 29px;
 }
 
 .technical_main {
-    padding-top:25px;
-    padding-bottom: 25px;
-    background: rgb(181,198,204);
-    background: linear-gradient(0deg, rgba(181,198,204,0.98) 0%, rgba(19,155,207,1) 100%);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: rgb(181, 198, 204);
+  background: linear-gradient(
+    0deg,
+    rgba(181, 198, 204, 0.98) 0%,
+    rgba(19, 155, 207, 1) 100%
+  );
 }
 
 @media only screen and (max-width: 600px) {
-    .above {
-        display: flex;
-        flex: 1;
-        margin-left:0px;
-        flex-direction: column;
-        margin-top: 55px;
-    }
+  .above {
+    display: flex;
+    flex: 1;
+    margin-left: 0px;
+    flex-direction: column;
+    margin-top: 55px;
+  }
 }

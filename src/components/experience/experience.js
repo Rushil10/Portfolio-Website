@@ -6,26 +6,44 @@ function Experience() {
 
     const exp = [
         {
-            name:'MunchIn',
-            term:'Feb 2021 - May 2021',
-            role:'React Native developer',
-            description:'It was a very good experience as an intern.I got to learn many things apart from react-native like coordinating in teams, decision making and problem solving. During these 4 months i worked on every aspect of the app which helped me in increasing my skill and abilities. ',
-            plink:'https://play.google.com/store/apps/details?id=com.munchinapp',
-            alink:'',
-            glink:'',
+            name: 'Coinstorey',
+            term: 'May 2021 - Nov 2021',
+            role: 'Lead React Native developer',
+            description: 'Crypto based fantasy gaming platform. Create your portfolio and compete in contests for real money.',
+            plink: 'https://play.google.com/store/apps/details?id=com.coinstorey',
+            alink: '',
+            glink: '',
         },
         {
-            name:'Gamers Prestige',
-            term:'July 2020 - Sept 2020',
-            role:'React Native Developer',
-            description:'This was my First Internship in react-native. I made a News App from scratch with search,filter and dark mode features. This helped me in understanding and getting familiar with the framework.',
-            alink:'',
-            plink:'',
-            glink:'https://github.com/Rushil10/News-App'
+            name: 'Travokarma',
+            term: 'Sep 2021 - Nov 2021',
+            role: 'React Native developer',
+            description: 'Travel Based Application for travel enthusisasts',
+            plink: '',
+            alink: '',
+            glink: '',
+        },
+        {
+            name: 'MunchIn',
+            term: 'Feb 2021 - May 2021',
+            role: 'React Native developer',
+            description: 'It was a very good experience as an intern.I got to learn many things apart from react-native like coordinating in teams, decision making and problem solving. During these 4 months i worked on every aspect of the app which helped me in increasing my skill and abilities. ',
+            plink: 'https://play.google.com/store/apps/details?id=com.munchinapp',
+            alink: '',
+            glink: '',
+        },
+        {
+            name: 'Gamers Prestige',
+            term: 'July 2020 - Sept 2020',
+            role: 'React Native Developer',
+            description: 'This was my First Internship in react-native. I made a News App from scratch with search,filter and dark mode features. This helped me in understanding and getting familiar with the framework.',
+            alink: '',
+            plink: '',
+            glink: 'https://github.com/Rushil10/News-App'
         }
     ]
-    
-    let cards = exp.map((item,index) => 
+
+    let cards = exp.map((item, index) =>
         <ExpCard index={index} item={item} />
     )
 

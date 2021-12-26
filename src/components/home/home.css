@@ -1,34 +1,46 @@
 .rest {
-    display:flex;
-    flex:1;
-    background-image: url('../../images/p45.jpg');
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 55px;
-    background-color:black;
-    height:100%;
+  display: flex;
+  flex: 1;
+  background-image: url("../../images/mountains.jpg");
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 55px;
+  background-color: black;
+  height: 100%;
+}
+
+.linkkk {
+  text-decoration: none;
+  color: "#0d1117";
+  position: relative;
+  margin-right: 9px;
+  margin-left: 9px;
+  margin-top: 15px;
 }
 
 .typing {
-    display:flex;
-    flex-direction: row;
-    height:55px;
-    padding-left: 45px;
-    font-size:29px;
-    color:white
+  display: flex;
+  flex-direction: row;
+  height: 55px;
+  padding-left: 45px;
+  font-size: 29px;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
-    .rest {
-        display:flex;
-        flex:1;
-        background-image: url('../../images/p29.jpg');
-        background-size:cover;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 0px;
-        background-color:black;
-        height:100%;
-        overflow:hidden
-    }
+  .rest {
+    display: flex;
+    flex: 1;
+    background-image: url("../../images/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+  }
 }

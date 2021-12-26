@@ -1,45 +1,65 @@
 import React from 'react';
 import './contact.scss';
 import emailjs from 'emailjs-com';
-import{ init } from 'emailjs-com';
+import { init } from 'emailjs-com';
 import tick from '../../images/tick.svg';
 import { FaSpinner } from 'react-icons/fa';
-import {Spinner} from 'react-activity'
+import { Spinner } from 'react-activity'
+import phone from '../../images/phone.png'
 init("user_YURxBHiKDaqPRsgjhUIvN");
 
 function Contact() {
 
-    const [visible,setVisible] = React.useState(false);
-    const [loading,setLoading] = React.useState(false);
+    const [visible, setVisible] = React.useState(false);
+    const [loading, setLoading] = React.useState(false);
+    const [error, setError] = React.useState('')
 
     function sendEmail(e) {
         setLoading(true);
         e.preventDefault();
-        console.log(e.target)
-        emailjs.sendForm('service_tmyx21t','template_dirkou2', e.target, 'user_YURxBHiKDaqPRsgjhUIvN')
-          .then((result) => {
-              console.log(result.text);
-              setVisible(true);
-              setLoading(false);
-              setTimeout(function () {
-                  setVisible(false)
-              },5000)
-          }, (error) => {
-              console.log(error.text);
-          });
-      }
+        console.log(e.target.form_name)
+        emailjs.sendForm('service_tmyx21t', 'template_dirkou2', e.target, 'user_YURxBHiKDaqPRsgjhUIvN')
+            .then((result) => {
+                console.log(result.text);
+                setVisible(true);
+                setLoading(false);
+                setTimeout(function () {
+                    setVisible(false)
+                }, 5000)
+            }, (error) => {
+                console.log(error.text);
+                setError(error.text)
+                setLoading(false);
+                setTimeout(function () {
+                    setError('')
+                }, 5000)
+            });
+    }
 
-    return(
+    return (
         <div className="con_container">
             <div className="con_box">
                 Contact Me
             </div>
+            <div className="contactDetails">
+                <img src={phone} style={{ height: 29, width: 29, marginRight: 9 }} />
+                +91 - 8169846575
+            </div>
             {
                 visible &&
                 <div className="tickcheck">
-                    <img src={tick} style={{height:41,width:41}} />
+                    <img src={tick} style={{ height: 41, width: 41 }} />
                     <div className="ticktext">
-                    Email Sent
+                        Email Sent
+                    </div>
+                </div>
+            }
+            {
+                error.length > 0 &&
+                <div className="tickcheck">
+                    <img src={tick} style={{ height: 41, width: 41 }} />
+                    <div className="ticktext">
+                        error
                     </div>
                 </div>
             }
@@ -58,27 +78,13 @@ function Contact() {
                 <button type="submit" className="form_button">
                     {
                         !loading ?
-                        'Send':
-                        <div style={{paddingLeft:15.75,alignItems:'center',textAlign:'center',justifyContent:'center'}}>
-                            <Spinner style={{}}/>
-                        </div>
+                            'Send' :
+                            <div style={{ paddingLeft: 15.75, alignItems: 'center', textAlign: 'center', justifyContent: 'center' }}>
+                                <Spinner style={{}} />
+                            </div>
                     }
                 </button>
             </form>
-            {
-                /*
-                <form className="contact-form" onSubmit={sendEmail}>
-      <input type="hidden" name="contact_number" />
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
-                */
-            }
         </div>
     )
 }

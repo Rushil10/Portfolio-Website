@@ -1,68 +1,386 @@
 .con_container {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    margin-left: 55px;
-    background-color:#eef4ff;
-    overflow-y: auto;
-    padding-bottom: 55px;
-    overflow-x: hidden;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 55px;
+  background-color: #eef4ff;
+  overflow-y: auto;
+  padding-bottom: 55px;
+  overflow-x: hidden;
 }
 
 .con_box {
-    font-size:35px;
-    color:#678efe;
-    padding:9px;
-    font-weight:550;
+  font-size: 35px;
+  color: #678efe;
+  padding: 9px;
+  font-weight: 550;
+}
+
+.contactDetails {
+  font-size: 19px;
+  color: #678efe;
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 9px;
+  padding-bottom: 9px;
+  font-weight: 550;
 }
 
 .tickcheck {
-    display:inline-flex;
-    margin-left: 9px;
-    margin-bottom: 9px;
-    font-size: 19px;
-    line-height: 35px;
-    vertical-align: middle;
-    text-align: center;
+  display: inline-flex;
+  margin-left: 9px;
+  margin-bottom: 9px;
+  font-size: 19px;
+  line-height: 35px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .ticktext {
-    line-height: 41px;
-    vertical-align: middle;
-    text-align: center;
-    padding-left: 2.5px;
+  line-height: 41px;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 2.5px;
 }
 
 .con_label {
-    font-size:29px;
-    color:#fc6d6d;
-    padding:9px
+  font-size: 29px;
+  color: #fc6d6d;
+  padding: 9px;
 }
 
 .form_name {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .form_email {
-    display: flex;
-    flex-direction: row;
-    margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
 }
 
 .form_message {
-    margin-top: 15px;
-    margin-left: 9px;
+  margin-top: 15px;
+  margin-left: 9px;
 }
 
 .form_button {
+  margin-top: 15px;
+  margin-left: 9px;
+  min-width: 75px;
+  height: 35px;
+  width: 7.5%;
+  font-size: 15px;
+  color: gray;
+  background-color: transparent;
+  border: 1.5px solid;
+  border-color: #275efe;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 1.5px;
+  background-color: transparent;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 29px;
+}
+
+.form_button:hover {
+  margin-top: 15px;
+  margin-left: 9px;
+  height: 35px;
+  width: 7.5%;
+  font-size: 15px;
+  color: black;
+  border: 1.5px solid;
+  border-color: #275efe;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 1.5px;
+  background-color: #678efe;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 29px;
+}
+
+.input_message {
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #cdd9ed;
+  background: #eef4ff;
+  font-size: 15px;
+  padding: 0.5px;
+  width: 45%;
+  font-family: inherit;
+  line-height: 31px;
+  padding-left: 15px;
+  background: #fff;
+  border-radius: 6px 6px 6px 6px;
+  color: gray;
+  height: 175px;
+}
+
+.input_message::placeholder {
+  font-size: 15px;
+}
+
+.name_span {
+  display: flex;
+  line-height: 35px;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 10.5px;
+  padding-right: 10.5px;
+  border-top: 1px solid;
+  border-radius: 0px 6px 6px 0px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #cdd9ed;
+  background: #eef4ff;
+  color: gray;
+  font-size: 15px;
+  font-weight: 595;
+}
+
+.email_span {
+  display: flex;
+  line-height: 35px;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 10.5px;
+  padding-right: 10.5px;
+  border-top: 1px solid;
+  border-radius: 0px 6px 6px 0px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #cdd9ed;
+  background: #eef4ff;
+  color: gray;
+  font-size: 15px;
+  font-weight: 595;
+}
+
+.input_name {
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #cdd9ed;
+  background: #eef4ff;
+  font-size: 19px;
+  padding: 0.5px;
+  width: 45%;
+  margin-left: 9px;
+  font-family: inherit;
+  line-height: 31px;
+  padding-left: 15px;
+  background: #fff;
+  border-radius: 6px 0px 0px 6px;
+  color: gray;
+}
+
+.input_email {
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #cdd9ed;
+  background: #eef4ff;
+  font-size: 19px;
+  padding: 0.5px;
+  width: 45%;
+  margin-left: 9px;
+  font-family: inherit;
+  line-height: 31px;
+  padding-left: 15px;
+  background: #fff;
+  border-radius: 6px 0px 0px 6px;
+  color: gray;
+}
+
+.input_name:focus + .name_span {
+  border: 1px solid;
+  outline: none;
+  border-color: #275efe;
+  border-radius: 0px 6px 6px 0px;
+  background: #678efe;
+  color: #101010;
+}
+
+.input_message:focus {
+  border: 1px solid;
+  outline: none;
+  border-color: #275efe;
+  border-radius: 6px 6px 6px 6px;
+  background: #fff;
+  color: gray;
+}
+
+.input_email:focus + .email_span {
+  border: 1px solid;
+  outline: none;
+  border-color: #275efe;
+  border-radius: 0px 6px 6px 0px;
+  background: #678efe;
+  color: #101010;
+}
+
+.input_name:focus {
+  border: 1px solid;
+  outline: none;
+  border-color: #275efe;
+  border-radius: 6px 0px 0px 6px;
+  background: #fff;
+  color: gray;
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: gray;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input_email:focus {
+  border: 1px solid;
+  outline: none;
+  border-color: #275efe;
+  border-radius: 6px 0px 0px 6px;
+  background: #fff;
+  color: gray;
+}
+
+.contact-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .con_container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 0px;
+    background-color: #eef4ff;
+    overflow-y: auto;
+    padding-bottom: 55px;
+    overflow-x: hidden;
+    margin-top: 55px;
+  }
+  .input_name {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #cdd9ed;
+    background: #eef4ff;
+    font-size: 19px;
+    padding: 0.5px;
+    width: 75%;
+    margin-left: 9px;
+    font-family: inherit;
+    line-height: 45px;
+    padding-left: 15px;
+    background: #fff;
+    border-radius: 6px 0px 0px 6px;
+    color: gray;
+  }
+
+  .input_email {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #cdd9ed;
+    background: #eef4ff;
+    font-size: 19px;
+    padding: 0.5px;
+    width: 75%;
+    margin-left: 9px;
+    font-family: inherit;
+    line-height: 45px;
+    padding-left: 15px;
+    background: #fff;
+    border-radius: 6px 0px 0px 6px;
+    color: gray;
+  }
+
+  .input_message {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #cdd9ed;
+    background: #eef4ff;
+    font-size: 19px;
+    padding: 0.5px;
+    width: 75%;
+    font-family: inherit;
+    line-height: 31px;
+    padding-left: 15px;
+    background: #fff;
+    border-radius: 6px 6px 6px 6px;
+    color: gray;
+    height: 175px;
+  }
+
+  .name_span {
+    display: flex;
+    line-height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 10.5px;
+    padding-right: 10.5px;
+    border-top: 1px solid;
+    border-radius: 0px 6px 6px 0px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #cdd9ed;
+    background: #eef4ff;
+    color: gray;
+    font-size: 18.05px;
+    font-weight: 595;
+  }
+
+  .email_span {
+    display: flex;
+    line-height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 10.5px;
+    padding-right: 10.5px;
+    border-top: 1px solid;
+    border-radius: 0px 6px 6px 0px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #cdd9ed;
+    background: #eef4ff;
+    color: gray;
+    font-size: 18.05px;
+    font-weight: 595;
+  }
+
+  .con_box {
+    font-size: 35px;
+    color: #678efe;
+    padding: 9px;
+    font-weight: 475;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .form_button {
     margin-top: 15px;
     margin-left: 9px;
-    min-width: 75px;
+    width: 75px;
     height: 35px;
-    width: 7.5%;
-    font-size: 15px;
-    color:gray;
+    font-size: 19px;
+    color: gray;
     background-color: transparent;
     border: 1.5px solid;
     border-color: #275efe;
@@ -71,18 +389,18 @@
     vertical-align: middle;
     padding-top: 1.5px;
     background-color: transparent;
-    font-weight: 500;
+    font-weight: 575;
     font-family: inherit;
-    line-height: 29px;
-}
+    line-height: 19px;
+  }
 
-.form_button:hover {
+  .form_button:hover {
     margin-top: 15px;
     margin-left: 9px;
     height: 35px;
-    width: 7.5%;
-    font-size: 15px;
-    color:black;
+    width: 75px;
+    font-size: 19px;
+    color: black;
     border: 1.5px solid;
     border-color: #275efe;
     border-radius: 5px;
@@ -92,314 +410,6 @@
     background-color: #678efe;
     font-weight: 500;
     font-family: inherit;
-    line-height: 29px;
+    line-height: 19px;
+  }
 }
-
-.input_message {
-    border-top:1px solid;
-    border-left:1px solid;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #cdd9ed;
-    background:#eef4ff;
-    font-size:15px;
-    padding: 0.5px;
-    width:45%;
-    font-family: inherit;
-    line-height:31px;
-    padding-left:15px;
-    background:#fff;
-    border-radius: 6px 6px 6px 6px;
-    color:gray;
-    height: 175px
-}
-
-.input_message::placeholder{
-    font-size: 15px;
-}
-
-.name_span {
-    display:flex;
-    line-height:35px;
-    vertical-align:middle;
-    text-align:center;
-    padding-left:10.5px;
-    padding-right: 10.5px;
-    border-top:1px solid;
-    border-radius: 0px 6px 6px 0px;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #cdd9ed;
-    background:#eef4ff;
-    color:gray;
-    font-size:15px;
-    font-weight:595
-}
-
-.email_span {
-    display:flex;
-    line-height:35px;
-    vertical-align:middle;
-    text-align:center;
-    padding-left:10.5px;
-    padding-right: 10.5px;
-    border-top:1px solid;
-    border-radius: 0px 6px 6px 0px;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #cdd9ed;
-    background:#eef4ff;
-    color:gray;
-    font-size:15px;
-    font-weight:595
-}
-
-.input_name {
-    border-top:1px solid;
-    border-left:1px solid;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #cdd9ed;
-    background:#eef4ff;
-    font-size:19px;
-    padding: 0.5px;
-    width:45%;
-    margin-left:9px;
-    font-family: inherit;
-    line-height:31px;
-    padding-left:15px;
-    background:#fff;
-    border-radius: 6px 0px 0px 6px;
-    color:gray
-}
-
-.input_email {
-    border-top:1px solid;
-    border-left:1px solid;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #cdd9ed;
-    background:#eef4ff;
-    font-size:19px;
-    padding: 0.5px;
-    width:45%;
-    margin-left:9px;
-    font-family: inherit;
-    line-height:31px;
-    padding-left:15px;
-    background:#fff;
-    border-radius: 6px 0px 0px 6px;
-    color:gray
-}
-
-.input_name:focus + .name_span{
-    border:1px solid;
-    outline:none;
-    border-color: #275efe;
-    border-radius: 0px 6px 6px 0px;
-    background:#678efe;
-    color:#101010;
-}
-
-.input_message:focus {
-    border:1px solid;
-    outline:none;
-    border-color: #275efe;
-    border-radius: 6px 6px 6px 6px;
-    background:#fff;
-    color: gray;
-}
-
-.input_email:focus + .email_span{
-    border:1px solid;
-    outline:none;
-    border-color: #275efe;
-    border-radius: 0px 6px 6px 0px;
-    background:#678efe;
-    color:#101010;
-}
-
-.input_name:focus {
-    border:1px solid;
-    outline:none;
-    border-color: #275efe;
-    border-radius: 6px 0px 0px 6px;
-    background:#fff;
-    color: gray;
-}
-
-input:-webkit-autofill,
-select:-webkit-autofill:focus {
-    -webkit-text-fill-color: gray;
-    transition: background-color 5000s ease-in-out 0s;
-}
-
-.input_email:focus {
-    border:1px solid;
-    outline:none;
-    border-color: #275efe;
-    border-radius: 6px 0px 0px 6px;
-    background:#fff;
-    color: gray;
-}
-
-.contact-form {
-    display: flex;
-    flex:1;
-    flex-direction: column;
-}
-
-@media only screen and (max-width: 600px) {
-    .con_container {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        margin-left: 0px;
-        background-color:#eef4ff;
-        overflow-y: auto;
-        padding-bottom: 55px;
-        overflow-x: hidden;
-        margin-top: 55px;
-    }
-    .input_name {
-        border-top:1px solid;
-        border-left:1px solid;
-        border-right: 1px solid;
-        border-bottom: 1px solid;
-        border-color: #cdd9ed;
-        background:#eef4ff;
-        font-size:19px;
-        padding: 0.5px;
-        width:75%;
-        margin-left:9px;
-        font-family: inherit;
-        line-height:45px;
-        padding-left:15px;
-        background:#fff;
-        border-radius: 6px 0px 0px 6px;
-        color:gray
-    }
-
-    .input_email {
-        border-top:1px solid;
-        border-left:1px solid;
-        border-right: 1px solid;
-        border-bottom: 1px solid;
-        border-color: #cdd9ed;
-        background:#eef4ff;
-        font-size:19px;
-        padding: 0.5px;
-        width:75%;
-        margin-left:9px;
-        font-family: inherit;
-        line-height:45px;
-        padding-left:15px;
-        background:#fff;
-        border-radius: 6px 0px 0px 6px;
-        color:gray
-    }
-
-    .input_message {
-        border-top:1px solid;
-        border-left:1px solid;
-        border-right: 1px solid;
-        border-bottom: 1px solid;
-        border-color: #cdd9ed;
-        background:#eef4ff;
-        font-size:19px;
-        padding: 0.5px;
-        width:75%;
-        font-family: inherit;
-        line-height:31px;
-        padding-left:15px;
-        background:#fff;
-        border-radius: 6px 6px 6px 6px;
-        color:gray;
-        height: 175px
-    }
-
-    .name_span {
-        display:flex;
-        line-height:45px;
-        vertical-align:middle;
-        text-align:center;
-        padding-left:10.5px;
-        padding-right: 10.5px;
-        border-top:1px solid;
-        border-radius: 0px 6px 6px 0px;
-        border-right: 1px solid;
-        border-bottom: 1px solid;
-        border-color: #cdd9ed;
-        background:#eef4ff;
-        color:gray;
-        font-size:18.05px;
-        font-weight:595
-    }
-    
-    .email_span {
-        display:flex;
-        line-height:45px;
-        vertical-align:middle;
-        text-align:center;
-        padding-left:10.5px;
-        padding-right: 10.5px;
-        border-top:1px solid;
-        border-radius: 0px 6px 6px 0px;
-        border-right: 1px solid;
-        border-bottom: 1px solid;
-        border-color: #cdd9ed;
-        background:#eef4ff;
-        color:gray;
-        font-size:18.05px;
-        font-weight:595
-    }
-
-    .con_box {
-        font-size:35px;
-        color:#678efe;
-        padding:9px;
-        font-weight:475;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .form_button {
-        margin-top: 15px;
-        margin-left: 9px;
-        width: 75px;
-        height: 35px;
-        font-size: 19px;
-        color:gray;
-        background-color: transparent;
-        border: 1.5px solid;
-        border-color: #275efe;
-        border-radius: 5px;
-        text-align: center;
-        vertical-align: middle;
-        padding-top: 1.5px;
-        background-color: transparent;
-        font-weight: 575;
-        font-family: inherit;
-        line-height: 19px;
-    }
-
-    .form_button:hover {
-        margin-top: 15px;
-        margin-left: 9px;
-        height: 35px;
-        width: 75px;
-        font-size: 19px;
-        color:black;
-        border: 1.5px solid;
-        border-color: #275efe;
-        border-radius: 5px;
-        text-align: center;
-        vertical-align: middle;
-        padding-top: 1.5px;
-        background-color: #678efe;
-        font-weight: 500;
-        font-family: inherit;
-        line-height: 19px;
-    }
-}
-
