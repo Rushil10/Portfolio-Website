@@ -64,7 +64,25 @@
   width: fit-content;
 }
 
+.flutter {
+  border: solid 1px #00bfff;
+  border-width: 1px;
+  color: #00bfff;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
 .mysql {
+  border: solid 1px #00ff7f;
+  border-width: 1px;
+  color: #00ff7f;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.sq-lite {
   border: solid 1px #00ff7f;
   border-width: 1px;
   color: #00ff7f;

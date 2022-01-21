@@ -6,6 +6,21 @@ function Projects() {
 
     const projects = [
         {
+            title: 'Player Stats 22',
+            date: 'Jan 2022',
+            image: 'exists',
+            link: 'https://play.google.com/store/apps/details?id=com.fistat.fifa_stats',
+            description: 'FIFA 22 Stats Viewer',
+            languages: [
+                {
+                    name: 'flutter',
+                },
+                {
+                    name: 'sq-lite',
+                },
+            ]
+        },
+        {
             title: 'Directmart',
             date: 'May 2021',
             image: 'exists',

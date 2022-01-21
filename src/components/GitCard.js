@@ -4,9 +4,10 @@ import twitter from '../images/twitter.png'
 import directmart from '../images/directmart.png'
 import playmate from '../images/playmate.png'
 import instagram from '../images/instagram.png'
+import fifa from '../images/fifa.png'
 
 function GitCard(props) {
-    const logos = [directmart, playmate, instagram, twitter]
+    const logos = [fifa,directmart, playmate, instagram, twitter]
     return (
         <a href={props.data.link} className="linkkk">
             <div className="dummy">
@@ -46,6 +47,3 @@ function GitCard(props) {
 }
 
 export default GitCard;
-{/*
-<button style={{backgroundColor:'transparent',padding:5,fontWeight:'0',borderRadius:9,borderWidth:0.5,borderColor:'#fff300',color:'#fff300',fontSize:11.5}}>JavaScript</button>
-*/}
