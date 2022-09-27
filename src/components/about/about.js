@@ -44,7 +44,7 @@ function About() {
           <div className="icon">
             <img src={clg} style={{ height: 35, width: 35 }} />
             <div className="icon-text">
-              I am a last year Commputer Science student at K J Somaiya College
+              I am a Last year Computer Science student at K J Somaiya College
               Of Engineering.
             </div>
           </div>
@@ -53,8 +53,7 @@ function About() {
           <div className="icon">
             <img src={bt} style={{ height: 35, width: 35 }} />
             <div className="icon-text">
-              I enjoy building software to solve problems. I am a full stack
-              developer.
+              I enjoy building software to solve problems. Most of my projects are based on real world problems faced by me.
             </div>
           </div>
         </div>

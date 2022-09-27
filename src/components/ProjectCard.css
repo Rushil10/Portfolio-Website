@@ -1,0 +1,143 @@
+.language {
+  width: "fit-content";
+  display: flex;
+  padding-bottom: 2.5px;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  margin-right: 15px;
+}
+
+.javascript {
+  border: solid 1px #fff300;
+  border-width: 1px;
+  color: #fff300;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.react {
+  border: solid 1px #61dbfb;
+  border-width: 1px;
+  color: #61dbfb;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.express {
+  border: solid 1px #00bfff;
+  border-width: 1px;
+  color: #00bfff;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.flutter {
+  border: solid 1px #00bfff;
+  border-width: 1px;
+  color: #00bfff;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.mysql {
+  border: solid 1px #00ff7f;
+  border-width: 1px;
+  color: #00ff7f;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.sq-lite {
+  border: solid 1px #00ff7f;
+  border-width: 1px;
+  color: #00ff7f;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.tkinter {
+  border: solid 1px #ff00ff;
+  border-width: 1px;
+  color: #ff00ff;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.opencv {
+  border: solid 1px #ff8c00;
+  border-width: 1px;
+  color: #ff8c00;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.redux {
+  border: solid 1px #ff69b4;
+  border-width: 1px;
+  color: #ff69b4;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.firebase {
+  border: solid 1px #ffd700;
+  border-width: 1px;
+  color: #ffd700;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.mongodb {
+  border: solid 1px #00ff7f;
+  border-width: 1px;
+  color: #00ff7f;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.ganache {
+  border: solid 1px #ffd700;
+  border-width: 1px;
+  color: #ffd700;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.react-native {
+  border: solid 1px #20b2aa;
+  border-width: 1px;
+  color: #20b2aa;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.tensorflow {
+  border: solid 1px #ff4500;
+  border-width: 1px;
+  color: #ff4500;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}
+
+.solidity {
+  border: solid 1px #ff4500;
+  border-width: 1px;
+  color: #ff4500;
+  border-radius: 9999px;
+  font-weight: 150;
+  width: fit-content;
+}

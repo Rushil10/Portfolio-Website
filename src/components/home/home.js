@@ -9,6 +9,20 @@ import phone from "../../images/phone.png";
 import linkedin from "../../images/linkedin.png";
 
 function Home() {
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch("Rushil's resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Rushil's resume.pdf";
+        alink.click();
+      });
+    });
+  };
   return (
     <div className="rest">
       <div
@@ -43,11 +57,29 @@ function Home() {
           />
         </div>
       </div>
+      <button
+        onClick={onButtonClick}
+        style={{
+          height: 35,
+          width: 155,
+          marginLeft: 45,
+          backgroundColor: "#fc6d6d",
+          borderRadius: 5,
+          paddingLeft: 9,
+          paddingRight: 9,
+          color: "black",
+        }}
+      >
+        Download Resume
+      </button>
       <div style={{ fontSize: 55, marginLeft: 45, flexDirection: "row" }}>
         <a href={"https://github.com/Rushil10"} className="linkkk">
           <img src={github} style={{ height: 35, width: 35 }} />
         </a>
-        <a href={"https://www.linkedin.com/in/rushil-shah-614b541a6/"} className="linkkk">
+        <a
+          href={"https://www.linkedin.com/in/rushil-shah-614b541a6/"}
+          className="linkkk"
+        >
           <img src={linkedin} style={{ height: 35, width: 35 }} />
         </a>
         <a href={"https://twitter.com/RushilS43311479"} className="linkkk">
