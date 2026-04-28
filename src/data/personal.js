@@ -10,15 +10,9 @@ export const personal = {
     { icon: "⚽", text: "When I'm not coding, I'm watching football. YNWA — Liverpool FC forever." },
   ],
   social: {
-    github:    "https://github.com/Rushil10",
-    linkedin:  "https://www.linkedin.com/in/rushil10shah/",
-    twitter:   "https://twitter.com/RushilS43311479",
-    email:     "rushil.10.shah@gmail.com",
+    github:   "https://github.com/Rushil10",
+    linkedin: "https://www.linkedin.com/in/rushil10shah/",
+    email:    "rushil.10.shah@gmail.com",
   },
   resume: "Rushil's resume.pdf",
-  emailjs: {
-    serviceId:  "service_tmyx21t",
-    templateId: "template_dirkou2",
-    userId:     "user_YURxBHiKDaqPRsgjhUIvN",
-  },
 };

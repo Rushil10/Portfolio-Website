@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
 import { personal } from '../../../data/personal';
 import './Home.css';
@@ -44,12 +44,6 @@ function Home() {
           </a>
           <a href={personal.social.linkedin}  target="_blank" rel="noreferrer" className="social-icon" aria-label="LinkedIn">
             <FaLinkedinIn />
-          </a>
-          <a href={personal.social.twitter}   target="_blank" rel="noreferrer" className="social-icon" aria-label="Twitter">
-            <FaTwitter />
-          </a>
-          <a href={personal.social.instagram} target="_blank" rel="noreferrer" className="social-icon" aria-label="Instagram">
-            <FaInstagram />
           </a>
           <a href={`mailto:${personal.social.email}`} className="social-icon" aria-label="Email">
             <FaEnvelope />

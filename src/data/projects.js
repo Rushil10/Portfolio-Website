@@ -27,7 +27,6 @@ export const projects = [
     title:        "Distributed Paxos Banking",
     date:         "Dec 2024",
     image:        null,
-    gitLink:      "https://github.com/Rushil10/Paxos-Banking",
     description:  "Fault-tolerant distributed banking system using a sharded architecture. Each shard uses Paxos for consensus, 2-phase locking (2PL) for concurrency, and 2-phase commit (2PC) with a Transaction Coordinator for cross-shard transactions.",
     tags:         ["Paxos", "RAFT", "Distributed Systems", "RPC", "Multi-Threading", "2PL", "2PC"],
   },
