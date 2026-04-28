@@ -1,0 +1,42 @@
+export const experience = [
+  {
+    company:     "Connectwise",
+    term:        "June 2022 – August 2022",
+    role:        "Software Engineer Intern",
+    description: "Worked on the Elastic Stack (Elasticsearch, Logstash, Kibana) to enhance system security monitoring and observability pipelines.",
+    tags:        ["Elasticsearch", "Logstash", "Kibana"],
+    link:        "",
+  },
+  {
+    company:     "Coinstorey",
+    term:        "May 2021 – Nov 2021",
+    role:        "Lead Mobile App Developer",
+    description: "Led development of a crypto-based fantasy gaming platform. Built real-time crypto price tracking, news feeds, portfolio management, and contest entry flows.",
+    tags:        ["React Native", "Firebase"],
+    link:        "https://play.google.com/store/apps/details?id=com.coinstorey",
+  },
+  {
+    company:     "Travokarma",
+    term:        "Sep 2021 – Nov 2021",
+    role:        "Mobile App Developer",
+    description: "Built features for a travel enthusiast app, focusing on trip discovery and itinerary planning.",
+    tags:        ["React Native"],
+    link:        "",
+  },
+  {
+    company:     "MunchIn",
+    term:        "Feb 2021 – May 2021",
+    role:        "React Native Developer",
+    description: "Worked across all aspects of the app over 4 months. Gained experience in team coordination, decision-making, and end-to-end mobile development.",
+    tags:        ["React Native", "Redux"],
+    link:        "https://play.google.com/store/apps/details?id=com.munchinapp",
+  },
+  {
+    company:     "Gamers Prestige",
+    term:        "July 2020 – Sept 2020",
+    role:        "React Native Developer",
+    description: "First internship. Built a News App from scratch featuring search, filter, dark mode, and share functionality.",
+    tags:        ["React Native"],
+    link:        "https://github.com/Rushil10/News-App",
+  },
+];

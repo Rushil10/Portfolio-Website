@@ -1,30 +1,25 @@
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar     from './components/layout/Navbar/Navbar';
+import Home       from './components/sections/Home/Home';
+import About      from './components/sections/About/About';
+import Projects   from './components/sections/Projects/Projects';
+import Experience from './components/sections/Experience/Experience';
+import Contact    from './components/sections/Contact/Contact';
 import './App.css';
-import Toolbar from './components/Toolbar/Toolbar'
-import Home from './components/home/home'
-import {BrowserRouter as  Router, Switch,Route } from 'react-router-dom';
-import About from './components/about/about';
-import Projects from './components/projects/projects';
-import Contact from './components/contact/contact';
-import Experience from './components/experience/experience';
-import Navbar from './components/navbar/navbar';
 
 function App() {
   return (
-    <div className="main">   
-      <Router>
-        <div className="hide">
-        <Navbar />
-        </div>
-        <Toolbar /> 
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/about" component={About} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/experience" component={Experience} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>
-      </Router>    
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path="/"           component={Home}       />
+        <Route exact path="/about"      component={About}      />
+        <Route exact path="/projects"   component={Projects}   />
+        <Route exact path="/experience" component={Experience} />
+        <Route exact path="/contact"    component={Contact}    />
+      </Switch>
+    </Router>
   );
 }
 
