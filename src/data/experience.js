@@ -2,9 +2,7 @@ export const experience = [
   {
     company:     "Meta",
     term:        "Jan 2025 – Present",
-    role:        "Software Engineer 2, Bloks Integrations",
-    location:    "1 Hacker Way, Menlo Park",
-    note:        "Promoted to SWE2 · Feb 2026",
+    role:        "Software Engineer, Bloks Integrations",
     bullets: [
       "Achieved 85% autonomous root-cause accuracy and 10+ validated auto-fixes/month across ~60 TTRC regressions by architecting a skill-based multi-agent system with custom MCP tools — a problem previously requiring manual engineer triage.",
       "Reduced Instagram Watched Reels large frame drops by 23% via a fully autonomous performance optimization loop: agent records Perfetto traces, evaluates cost functions, applies fixes, and ships a diff. Gains apply across all 20+ Bloks apps.",
