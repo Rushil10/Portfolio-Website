@@ -21,6 +21,7 @@
   height: 180px;
   overflow: hidden;
   flex-shrink: 0;
+  background: linear-gradient(135deg, var(--bg-2) 0%, rgba(74,124,247,0.1) 100%);
 }
 
 .card-image {

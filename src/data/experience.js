@@ -1,18 +1,40 @@
 export const experience = [
   {
-    company:     "Connectwise",
-    term:        "June 2022 – August 2022",
-    role:        "Software Engineer Intern",
-    description: "Worked on the Elastic Stack (Elasticsearch, Logstash, Kibana) to enhance system security monitoring and observability pipelines.",
-    tags:        ["Elasticsearch", "Logstash", "Kibana"],
+    company:     "Meta",
+    term:        "Jan 2025 – Present",
+    role:        "Software Engineer 2, Bloks Integrations",
+    location:    "1 Hacker Way, Menlo Park",
+    note:        "Promoted to SWE2 · Feb 2026",
+    bullets: [
+      "Achieved 85% autonomous root-cause accuracy and 10+ validated auto-fixes/month across ~60 TTRC regressions by architecting a skill-based multi-agent system with custom MCP tools — a problem previously requiring manual engineer triage.",
+      "Reduced Instagram Watched Reels large frame drops by 23% via a fully autonomous performance optimization loop: agent records Perfetto traces, evaluates cost functions, applies fixes, and ships a diff. Gains apply across all 20+ Bloks apps.",
+      "Conceived and shipped the de-facto agentic evaluation standard across 8+ Meta frameworks — centralized observability for regression tasks, per-task agent execution, and structured human grading. Ideated solo, now with 7+ collaborators org-wide.",
+      "Drove Swift adoption from <5% to >75% in one half by building comprehensive Swift-compatible APIs for Bloks, enabling 2,000+ developers to write modern Swift; automated Obj-C/Swift API parity via codegen.",
+      "Unified Bloks integration across 20 Meta apps by consolidating fragmented SDKs and standardizing disk cache, QPL, and TTRC telemetry. Automated the previously month-long process to a single AI-prompted diff (5 minutes).",
+      "Proactively caught 2 SEVs for Bloks Attachments (3.1B daily reductions) by establishing production reliability infrastructure — logging, automated alerting, and screenshot regression testing.",
+    ],
+    tags:        ["iOS", "Swift", "Obj-C", "AI Agents", "MCP", "Python", "Bloks"],
+    link:        "",
+  },
+  {
+    company:     "Nomura America Services, LLC",
+    term:        "Jun 2024 – Aug 2024",
+    role:        "Summer Analyst Intern",
+    location:    "Worldwide Plaza, New York, NY",
+    bullets: [
+      "Architected a web-based portal using React, TypeScript, and Redux frontend with a Spring Boot backend, enabling users to request and manage BOX folders through an intuitive interface rather than direct BOX access.",
+    ],
+    tags:        ["React", "TypeScript", "Redux", "Spring Boot"],
     link:        "",
   },
   {
     company:     "Coinstorey",
-    term:        "May 2021 – Nov 2021",
-    role:        "Lead Mobile App Developer",
-    description: "Led development of a crypto-based fantasy gaming platform. Built real-time crypto price tracking, news feeds, portfolio management, and contest entry flows.",
-    tags:        ["React Native", "Firebase"],
+    term:        "Jun 2022 – Aug 2022",
+    role:        "Sole Mobile Developer",
+    bullets: [
+      "Sole developer for a cryptocurrency trading competition app from concept to 1,000+ user launch. Built React Native app with paid 'tradathon' rooms, real-money entry fees, winner-take-all payouts, live trading across 100+ coins via WebSocket price feeds, a practice mode for beginners, and an integrated payment gateway.",
+    ],
+    tags:        ["React Native", "WebSockets", "Firebase"],
     link:        "https://play.google.com/store/apps/details?id=com.coinstorey",
   },
   {
@@ -33,7 +55,7 @@ export const experience = [
   },
   {
     company:     "Gamers Prestige",
-    term:        "July 2020 – Sept 2020",
+    term:        "Jul 2020 – Sep 2020",
     role:        "React Native Developer",
     description: "First internship. Built a News App from scratch featuring search, filter, dark mode, and share functionality.",
     tags:        ["React Native"],

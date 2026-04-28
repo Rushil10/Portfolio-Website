@@ -3,7 +3,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import './ExpCard.css';
 
 function ExpCard({ item, isLast }) {
-  const { company, role, term, description, tags, link } = item;
+  const { company, role, term, note, description, bullets, tags, link } = item;
 
   return (
     <div className={`exp-item${isLast ? ' last' : ''}`}>
@@ -24,11 +24,18 @@ function ExpCard({ item, isLast }) {
                 </a>
               )}
             </div>
+            {note && <div className="exp-note">{note}</div>}
           </div>
           <span className="exp-term">{term}</span>
         </div>
 
-        <p className="exp-desc">{description}</p>
+        {bullets && bullets.length > 0 ? (
+          <ul className="exp-bullets">
+            {bullets.map((b, i) => <li key={i}>{b}</li>)}
+          </ul>
+        ) : (
+          description && <p className="exp-desc">{description}</p>
+        )}
 
         <div className="exp-tags">
           {tags && tags.map((tag, i) => (

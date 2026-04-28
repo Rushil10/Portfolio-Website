@@ -66,7 +66,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.9rem;
 }
 
 .exp-role {
@@ -95,6 +95,14 @@
   color: var(--accent);
 }
 
+.exp-note {
+  margin-top: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--accent-2);
+  opacity: 0.8;
+}
+
 .exp-term {
   font-size: 0.78rem;
   color: var(--text-3);
@@ -103,6 +111,34 @@
   flex-shrink: 0;
 }
 
+/* Bullet list (for detailed entries like Meta) */
+.exp-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.exp-bullets li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+  color: var(--text-2);
+  line-height: 1.65;
+}
+
+.exp-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: var(--accent);
+  font-size: 0.75rem;
+}
+
+/* Plain description (for shorter entries) */
 .exp-desc {
   font-size: 0.88rem;
   color: var(--text-2);
@@ -110,6 +146,7 @@
   margin-bottom: 1rem;
 }
 
+/* Tags */
 .exp-tags {
   display: flex;
   flex-wrap: wrap;
