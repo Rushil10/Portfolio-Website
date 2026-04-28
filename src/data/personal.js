@@ -14,5 +14,5 @@ export const personal = {
     linkedin: "https://www.linkedin.com/in/rushil10shah/",
     email:    "rushil.10.shah@gmail.com",
   },
-  resume: "Rushil's resume.pdf",
+  resume: "https://drive.google.com/uc?export=download&id=1ierhCcjxuVQEDfWc8bZCp4377C9WBPfu",
 };

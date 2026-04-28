@@ -6,15 +6,7 @@ import './Home.css';
 
 function Home() {
   const downloadResume = () => {
-    fetch(personal.resume)
-      .then(r => r.blob())
-      .then(blob => {
-        const url = window.URL.createObjectURL(blob);
-        const a   = document.createElement('a');
-        a.href     = url;
-        a.download = personal.resume;
-        a.click();
-      });
+    window.open(personal.resume, '_blank');
   };
 
   return (
